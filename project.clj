@@ -1,4 +1,4 @@
-(defproject mies-node-template/lein-template "0.1.0"
+(defproject mies-node/lein-template "0.1.0"
   :description "A minimal ClojureScript Node.js project template"
 
   :url "http://github.com/swannodette/mies-node"
