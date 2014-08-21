@@ -1,6 +1,12 @@
 (defproject mies-node-template/lein-template "0.1.0"
   :description "A minimal ClojureScript Node.js project template"
-  :url "http://example.com/FIXME"
+
+  :url "http://github.com/swannodette/mies-node"
+
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+
+  :scm {:name "git"
+        :url "https://github.com/swannodette/mies-node"}
+
   :eval-in-leiningen true)
