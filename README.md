@@ -9,6 +9,7 @@ Run the following to create a project and start auto building.
 ```
 lein new mies-node hello-world
 cd hello-world
+lein npm install
 lein cljsbuild auto
 ```
 
@@ -17,6 +18,21 @@ run your code use the provided loader file in the project directory:
 
 ```
 node run.js
+```
+
+If you would like your program to run upon build completion you can
+change your build settings to look like the following:
+
+```clojure
+{:id "hello-world"
+ :source-paths ["src"]
+ :notify-command ["node" "run.js"]
+ :compiler {
+   :output-to "out/hello_world.js"
+   :output-dir "out"
+   :target :nodejs
+   :optimizations :none
+   :source-map true}}
 ```
 
 To get source map support simply run the following in your project directory:

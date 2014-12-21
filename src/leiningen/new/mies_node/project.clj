@@ -3,9 +3,12 @@
   :url "http://example.com/FIXME"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2371"]]
+                 [org.clojure/clojurescript "0.0-2505"]]
 
-  :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]]
+  :node-dependencies [[source-map-support "0.2.8"]]
+
+  :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]
+            [lein-npm "0.4.0"]]
 
   :source-paths ["src"]
 
