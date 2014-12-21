@@ -26,7 +26,7 @@ change your build settings to look like the following:
 ```clojure
 {:id "hello-world"
  :source-paths ["src"]
- :notify-command ["node" "run.js"]
+ :notify-command ["node" "run.js"] ;; << ADD THIS
  :compiler {
    :output-to "out/hello_world.js"
    :output-dir "out"
