@@ -35,15 +35,6 @@ change your build settings to look like the following:
    :source-map true}}
 ```
 
-To get source map support simply run the following in your project directory:
-
-```
-npm install source-map-support
-```
-
-`node run.js` will automatically load source map support for
-you and you will get accurate stack traces.
-
 ## License
 
 Copyright © 2014 David Nolen
