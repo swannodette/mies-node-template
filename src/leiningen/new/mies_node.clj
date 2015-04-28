@@ -9,5 +9,10 @@
     (->files data
       ["project.clj" (render "project.clj" data)]
       ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
-      ["run.js" (render "run.js" data)]
+      ["script/compile" (render "compile" data) :executable true]
+      ["script/compile.clj" (render "compile.clj" data)]
+      ["script/watch" (render "watch" data) :executable true]
+      ["script/watch.clj" (render "watch.clj" data)]
+      ["script/repl" (render "repl" data) :executable true]
+      ["script/repl.clj" (render "repl.clj" data)]
       [".gitignore" (render "gitignore" data)])))
