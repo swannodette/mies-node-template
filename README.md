@@ -1,5 +1,7 @@
 # mies-node-template
 
+**DEPRECATED**. This template is no longer maintained.
+
 A minimal ClojureScript Node.js template.
 
 ## Usage
